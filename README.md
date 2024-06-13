@@ -7,7 +7,7 @@ __Cadastro de Nomes:__ O projeto oferece um endpoint POST para cadastrar nomes e
 __Incremento Automático de ID:__ Uma função de trigger é acionada no Firestore toda vez que um novo nome é cadastrado, incrementando automaticamente o atributo increment_id com base no número de registros existentes.
 
 ## Arquitetura
-__O projeto é dividido em duas principais partes:__ configuração e serviços.
+__O projeto é dividido em duas principais partes:__ configuração e serviços, dentro de serviços podemos ter vários serviços diferentes e eles podem ou não compartilhar as configurações, atualmente só temos o serviço __*names*__.
 
 ### Configuração
 __Express:__ Configurações relacionadas ao Express, um framework web para Node.js, são definidas neste arquivo.
